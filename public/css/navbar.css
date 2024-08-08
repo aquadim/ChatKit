@@ -1,0 +1,31 @@
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  min-height: 32px;
+  background-color: var(--navbar-bg);
+  border-bottom: 1px solid var(--navbar-border);
+  padding: 0 64px;
+}
+
+.navbar-title {
+  display: flex;
+  color: var(--navbar-title);
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  flex-flow: row;
+  grid-column: 3;
+}
+
+.navbar-link {
+  display: block;
+  padding: 16px 8px;
+  text-decoration: none;
+  color: var(--navbar-link);
+}
+
+.navbar-link:hover {
+  background-color: var(--navbar-bg-hover);
+}

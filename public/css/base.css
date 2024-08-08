@@ -1,0 +1,41 @@
+:root {
+  --navbar-bg: #222;
+  --navbar-bg-hover: #333;
+  --navbar-border: #111;
+  --navbar-link: #777;
+  --navbar-title: #CCCCCC;
+  --button-bg: #333333;
+  --button-bg-hover: #404040;
+  --button-border: #404040;
+  --button-fg: #ccc;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.0;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  background-color: var(--button-bg);
+  border: 1px solid var(--button-border);
+  padding: 8px;
+  outline: none;
+  color: var(--button-fg);
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--button-bg-hover);
+}

@@ -1,0 +1,29 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+#chatWindow {
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    height: 100%;
+}
+
+.chatSidebar {
+    background-color: #1f1f1f;
+    padding: 8px;
+}
+
+.chatSidebar > * {
+    width: 100%;
+}
+
+#chatCore {
+    display: grid;
+    grid-template-rows: 1fr 32px;
+}
+
+#userInput {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
