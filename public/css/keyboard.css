@@ -1,0 +1,63 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 256px 1fr;
+}
+
+#keyboardCore {
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    flex-flow: column;
+}
+
+.kbBtn {
+    border-width: 1px;
+    border-style: solid;
+    flex: 1;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.kbBtnRow {
+    display: flex;
+    gap: 1em;
+}
+
+.kbAdd {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: black;
+    background-color: #e9e9ed;
+}
+
+.kbAddBtn {
+    width: 256px;
+    flex: initial;
+}
+
+/* Цвета кнопок */
+.kbColorPrimary {
+    background-color: #e9e9ed;
+}
+
+.kbColorSecondary {
+    background-color: #A0A0A3;
+}
+
+.kbColorNegative {
+    background-color: #E64646;
+}
+
+.kbColorPositive {
+    background-color: #4BB34B;
+}
+
+.kbBtn:hover {
+    filter: brightness(0.95);
+}
